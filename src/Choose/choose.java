@@ -22,11 +22,11 @@ public class choose extends JFrame implements ActionListener {
         frame.setBackground(new Color(50, 50, 50));
         frame.setLayout(null);
         frame.setLocationRelativeTo(null);
-        img = new ImageIcon(Objects.requireNonNull(getClass().getResource("img.png")));
         individual = new JButton("1 Player");
         multi = new JButton("2 Players");
         individual.setForeground(Color.BLUE);
         multi.setForeground(Color.RED);
+        img = new ImageIcon(Objects.requireNonNull(getClass().getResource("tictactoe.png")));
         logo = new JLabel(img);
         individual.addActionListener(this);
         multi.addActionListener(this);

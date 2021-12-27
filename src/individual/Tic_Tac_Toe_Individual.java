@@ -3,6 +3,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
+import Again.*;
 
 public class Tic_Tac_Toe_Individual implements ActionListener {
 
@@ -14,6 +15,7 @@ public class Tic_Tac_Toe_Individual implements ActionListener {
     JButton[] buttons;
     boolean first_turn;
     boolean is_end;
+    again ag;
 
     public Tic_Tac_Toe_Individual(){
         random = new Random();
@@ -139,13 +141,16 @@ public class Tic_Tac_Toe_Individual implements ActionListener {
             int[] cells = win_cells("X");
             win(cells[0], cells[1], cells[2], "You");
             is_end = true;
+            again_ind message = new again_ind();
         }else if(is_win("O")){
             int[] cells = win_cells("O");
             win(cells[0], cells[1], cells[2], "Dev");
             is_end = true;
+            again_ind message = new again_ind();
         }else if(is_tie()){
             end_with_tie();
             is_end = true;
+            again_ind message = new again_ind();
         }
     }
 
@@ -180,7 +185,7 @@ public class Tic_Tac_Toe_Individual implements ActionListener {
 
     public void First_turn(){
         try {
-            Thread.sleep(500);
+            Thread.sleep(200);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();

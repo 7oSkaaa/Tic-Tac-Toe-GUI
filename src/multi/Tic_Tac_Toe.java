@@ -3,6 +3,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
+import Again.*;
 
 public class Tic_Tac_Toe implements ActionListener {
 
@@ -52,6 +53,8 @@ public class Tic_Tac_Toe implements ActionListener {
         frame.add(board);
         First_turn();
     }
+
+
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -115,11 +118,21 @@ public class Tic_Tac_Toe implements ActionListener {
         if(is_win("X")){
             int[] cells = win_cells("X");
             win(cells[0], cells[1], cells[2], first);
+            again message = new again(first, second);
+            while(true){
+                if(message.is_closed()) {
+                    frame.dispose();
+                    break;
+                }
+            }
         }else if(is_win("O")){
             int[] cells = win_cells("O");
             win(cells[0], cells[1], cells[2], second);
+            again message = new again(first, second);
+
         }else if(is_tie()){
             end_with_tie();
+            again message = new again(first, second);
         }
     }
 
