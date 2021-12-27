@@ -4,6 +4,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import individual.Tic_Tac_Toe_Individual;
+import Choose.*;
 
 public class again_ind extends JFrame implements ActionListener {
 
@@ -40,14 +41,14 @@ public class again_ind extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        Window[] win = Window.getWindows();
+        for (Window window : win) {
+            window.dispose();
+        }
         if(e.getSource() == yes){
-            Window[] win = Window.getWindows();
-            for (Window window : win) {
-                window.dispose();
-            }
             new Tic_Tac_Toe_Individual();
         }else {
-            System.exit(0);
+            new choose();
         }
     }
 }

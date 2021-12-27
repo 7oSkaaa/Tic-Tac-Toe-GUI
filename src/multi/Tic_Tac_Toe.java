@@ -119,17 +119,10 @@ public class Tic_Tac_Toe implements ActionListener {
             int[] cells = win_cells("X");
             win(cells[0], cells[1], cells[2], first);
             again message = new again(first, second);
-            while(true){
-                if(message.is_closed()) {
-                    frame.dispose();
-                    break;
-                }
-            }
         }else if(is_win("O")){
             int[] cells = win_cells("O");
             win(cells[0], cells[1], cells[2], second);
             again message = new again(first, second);
-
         }else if(is_tie()){
             end_with_tie();
             again message = new again(first, second);
@@ -160,7 +153,7 @@ public class Tic_Tac_Toe implements ActionListener {
 
     public void First_turn(){
         try {
-            Thread.sleep(500);
+            Thread.sleep(300);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
