@@ -5,8 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Objects;
 import Input.input;
-import multi.Tic_Tac_Toe;
-import individual.Tic_Tac_Toe_Individual;
+import individual.*;
 
 public class choose extends JFrame implements ActionListener {
 

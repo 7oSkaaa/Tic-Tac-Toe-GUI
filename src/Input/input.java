@@ -14,6 +14,7 @@ public class input extends JFrame implements ActionListener {
     JButton play;
     ImageIcon img;
     String First, Second;
+
     public input(){
         frame = new JFrame("Tic Tac Toe");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

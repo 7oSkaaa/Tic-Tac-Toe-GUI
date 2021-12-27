@@ -26,7 +26,6 @@ public class Tic_Tac_Toe implements ActionListener {
         first = f;
         second = s;
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setVisible(true);
         frame.setSize(800, 800);
         frame.setBackground(new Color(50, 50, 50));
         frame.setLayout(new BorderLayout());
@@ -51,6 +50,7 @@ public class Tic_Tac_Toe implements ActionListener {
         title_panel.add(text_field);
         frame.add(title_panel, BorderLayout.NORTH);
         frame.add(board);
+        frame.setVisible(true);
         First_turn();
     }
 
@@ -118,14 +118,14 @@ public class Tic_Tac_Toe implements ActionListener {
         if(is_win("X")){
             int[] cells = win_cells("X");
             win(cells[0], cells[1], cells[2], first);
-            again message = new again(first, second);
+            new again(first, second);
         }else if(is_win("O")){
             int[] cells = win_cells("O");
             win(cells[0], cells[1], cells[2], second);
-            again message = new again(first, second);
+            new again(first, second);
         }else if(is_tie()){
             end_with_tie();
-            again message = new again(first, second);
+            new again(first, second);
         }
     }
 

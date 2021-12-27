@@ -15,7 +15,6 @@ public class Tic_Tac_Toe_Individual implements ActionListener {
     JButton[] buttons;
     boolean first_turn;
     boolean is_end;
-    again ag;
 
     public Tic_Tac_Toe_Individual(){
         random = new Random();
@@ -24,7 +23,6 @@ public class Tic_Tac_Toe_Individual implements ActionListener {
         board = new JPanel();
         text_field = new JLabel();
         buttons = new JButton[9];
-        frame.setVisible(true);
         frame.setSize(800, 800);
         frame.setBackground(new Color(50, 50, 50));
         frame.setLayout(new BorderLayout());
@@ -32,7 +30,7 @@ public class Tic_Tac_Toe_Individual implements ActionListener {
         title_panel.setLayout(new BorderLayout());
         text_field.setBackground(Color.BLACK);
         text_field.setForeground(new Color(255, 255, 255));
-        text_field.setFont(new Font("Fedora", Font.BOLD, 75));
+        text_field.setFont(new Font("MV Boli", Font.BOLD, 75));
         text_field.setHorizontalAlignment(JLabel.CENTER);
         text_field.setText("Tic-Tac-Toe");
         text_field.setOpaque(true);
@@ -50,6 +48,7 @@ public class Tic_Tac_Toe_Individual implements ActionListener {
         title_panel.add(text_field);
         frame.add(title_panel, BorderLayout.NORTH);
         frame.add(board);
+        frame.setVisible(true);
         is_end = false;
         First_turn();
     }
@@ -141,16 +140,16 @@ public class Tic_Tac_Toe_Individual implements ActionListener {
             int[] cells = win_cells("X");
             win(cells[0], cells[1], cells[2], "You");
             is_end = true;
-            again_ind message = new again_ind();
+            new again_ind();
         }else if(is_win("O")){
             int[] cells = win_cells("O");
             win(cells[0], cells[1], cells[2], "Dev");
             is_end = true;
-            again_ind message = new again_ind();
+            new again_ind();
         }else if(is_tie()){
             end_with_tie();
             is_end = true;
-            again_ind message = new again_ind();
+            new again_ind();
         }
     }
 
