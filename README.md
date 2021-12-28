@@ -1,5 +1,14 @@
 # Tic-Tac-Toe
 
-## Tic Tac Toe with Java GUI
+# Tic-Tac-Toe
 
-### you can play it individual or vs your friend
+This repository contains Java based interactive Tic-Tac-Toe game.
+
+## Running Tic-Tac-Toe:
+
+```
+git clone https://github.com/7oSkaaa/Tic-Tac-Toe-GUI.git
+open your java-IDE
+open Tic-Tac-Toe-GUI folder with the IDE
+run your code
+```
