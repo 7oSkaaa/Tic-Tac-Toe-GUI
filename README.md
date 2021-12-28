@@ -1,7 +1,5 @@
 # Tic-Tac-Toe
 
-# Tic-Tac-Toe
-
 This repository contains Java based interactive Tic-Tac-Toe game.
 
 ## Running Tic-Tac-Toe:
