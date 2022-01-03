@@ -70,7 +70,7 @@ public class Tic_Tac_Toe_Individual implements ActionListener {
 
     void computer_play(){
         try {
-            Thread.sleep(500);
+            Thread.sleep(200);
         } catch (InterruptedException e2) {
             // TODO Auto-generated catch block
             e2.printStackTrace();
