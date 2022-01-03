@@ -4,9 +4,8 @@ This repository contains Java based interactive Tic-Tac-Toe game.
 
 ## Running Tic-Tac-Toe:
 
+### Windows
 ```
 git clone https://github.com/7oSkaaa/Tic-Tac-Toe-GUI.git
-open your java-IDE
-open Tic-Tac-Toe-GUI folder with the IDE
-run your code
+Double Click on Tic_Tac_Toe.jar
 ```
