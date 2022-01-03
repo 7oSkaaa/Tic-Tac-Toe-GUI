@@ -13,17 +13,17 @@ Double Click on Tic_Tac_Toe.jar
 
 ### Linux
 
+open your terminal
+
 Make Sure that you already install java in your device
 ```
 sudo apt install default-jdk
 ```
-
-open your terminal
-```
-git clone https://github.com/7oSkaaa/Tic-Tac-Toe-GUI.git
-```
 ```
 sudo apt install default-jre
+```
+```
+git clone https://github.com/7oSkaaa/Tic-Tac-Toe-GUI.git
 ```
 go to the path of the folder
 ```
