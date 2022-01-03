@@ -32,3 +32,5 @@ chmod u+x Tic_Tac_Toe.jar
 ```
 java -jar Tic_Tac_Toe.jar
 ```
+
+https://user-images.githubusercontent.com/63050133/147991737-32a05d10-f7f6-4b9d-8509-aeaca4d38edb.mp4
