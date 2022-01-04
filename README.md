@@ -2,6 +2,7 @@
 
 This repository contains Java based interactive Tic-Tac-Toe game.
 
+In this game you can play individual or with another player with your names, if you will play individual you can play with two levels, hard one and easy one it's your choice.
 
 ## Requirments:
 
