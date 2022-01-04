@@ -3,15 +3,17 @@
 This repository contains Java based interactive Tic-Tac-Toe game.
 
 
-## Requirments
+## Requirments:
 
 ### Windows
 [Download and Install Java in your device](https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.exe)
 
 ### Linux
-open your terminal
 
 Make Sure that you already install java in your device
+
+open your terminal
+
 ```
 sudo apt install default-jdk
 ```
