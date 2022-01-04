@@ -1,5 +1,6 @@
 package Input;
 import javax.swing.*;
+import javax.swing.plaf.basic.BasicBorders;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -38,6 +39,10 @@ public class input extends JFrame implements ActionListener {
         logo.setBounds(320, 75, 150, 150);
         user1.setFont(new Font("MV Boli", Font.PLAIN, 20));
         user2.setFont(new Font("MV Boli", Font.PLAIN, 20));
+        name1.setFont(new Font("MV Boli", Font.PLAIN, 20));
+        name2.setFont(new Font("MV Boli", Font.PLAIN, 20));
+        name1.setMargin(new Insets(2, 4, 2, 2));
+        name2.setMargin(new Insets(2, 4, 2, 2));
         user1.setForeground(Color.RED);
         user2.setForeground(Color.BLUE);
         frame.add(logo);
