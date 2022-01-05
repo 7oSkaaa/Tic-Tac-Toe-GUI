@@ -60,4 +60,4 @@ java -jar Tic_Tac_Toe.jar
 
 This is a video of the game:
 
-https://user-images.githubusercontent.com/63050133/148062692-030a8b96-57cd-48fc-8cee-11d121afa391.mp4
+https://user-images.githubusercontent.com/63050133/148140304-56d006c2-5e21-4078-a44e-ab9bc8c88ebf.mp4
